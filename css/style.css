@@ -538,10 +538,7 @@ li:hover > .submenu{
 .footer {
     display: flex;
     align-items: center;
-    height: 2.5em;
     background: rgb(47, 56, 59);
-    /* margin-top: 2em; */
-
 
     position: fixed;
     /* Фиксированное положение */
@@ -555,7 +552,8 @@ li:hover > .submenu{
 .footer-body {
 	max-width: 1200px;   
 	width: 1200px;
-    margin: 0 2em 0 1em;
+	margin: auto;
+	padding: 0 2em 0 1em;
 }
 
 .footer-body p{
