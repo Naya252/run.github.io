@@ -613,7 +613,13 @@ li:hover > .submenu{
         display: flex;    
         flex-direction: column;
         align-items: center;
-    }
+	}
+	.footer-body p{
+		font-size: .5em;
+	}
+	.footer__item a {
+		font-size: .6em;
+	}
 }
 
 @media screen and (max-width: 519px) {
