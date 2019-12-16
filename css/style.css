@@ -616,6 +616,7 @@ li:hover > .submenu{
 	}
 }
 
+
 @media screen and (max-width: 575px) {
 	.footer-body p{
 		font-size: .4em;
@@ -645,7 +646,8 @@ li:hover > .submenu{
 	}
 
 	.gamburger1 i.gamburger3 {    
-		color: #3D7985;		    
+		/* color: #3D7985;	 */
+		color: #fff;	    
 		width: 43px;    
 		height: 39px;    
 		text-align: center;    
@@ -656,7 +658,8 @@ li:hover > .submenu{
 		cursor: pointer;    
 	}
 	.gamburger1 i.gamburger3:hover {    
-		color: #3D7985;  
+		/* color: #3D7985;  */
+		color: #fff; 
 	}
 	.gamburger2 {
 		overflow: hidden;
@@ -692,7 +695,7 @@ li:hover > .submenu{
 	.header {
 		height: 43px;
 		background: #999; 
-		opacity: 40%;
+		opacity: 80%;
 		margin:0px;
 	}	
 }
