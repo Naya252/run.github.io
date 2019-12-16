@@ -1,12 +1,6 @@
 
 
 body {
-	/* display: flex;
-	flex-direction: column;
-
-    justify-content: space-between;
-    align-items: center;
-    align-content: space-between; */
 	font-family: 'Lobster', cursive;
 	background-image: url(../img/bg.png);
 	background-repeat: round;
@@ -531,8 +525,8 @@ li:hover > .submenu{
     left: 0;
     bottom: 0;
     /* Левый нижний угол */
-    padding: 10px; /* Поля вокруг текста */
-    width: 100%; /* Ширина слоя */	
+    padding: .5em; /* Поля вокруг текста */
+	width: 100%; /* Ширина слоя */	
 }
 
 .footer-body {
@@ -611,11 +605,6 @@ li:hover > .submenu{
 }
 
 @media screen and (max-width: 575px) {
-    /* .columnF {
-        display: flex;    
-        /* flex-direction: column; */
-        /* align-items: center;
-	} */
 	.footer-body p{
 		font-size: .4em;
 		padding-top: 1.5em;
