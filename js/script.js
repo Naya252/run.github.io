@@ -76,8 +76,8 @@ insert = document.getElementById("insert");
 // media query event handler
 if (matchMedia) {
     const mq = window.matchMedia("(min-width: 769px)");
-	mq.addListener(WidthChange);
-	WidthChange(mq);
+    mq.addListener(WidthChange);
+    WidthChange(mq);
 }
 	
 	// media query change
@@ -98,6 +98,7 @@ function WidthChange(mq) {
 	}	
 }
 
+
 // гамбургер меню
 $(document).ready(function() {
     $(".gamburger3").click(function() {
@@ -106,41 +107,22 @@ $(document).ready(function() {
     $(".gamburger3").attr('datas', 'on');
     $(".gamburger3").removeClass("fa-bars");
     $(".gamburger3").addClass("fa-times");
+
+    // $(".gamburger3").addClass("gamL");
+    // $(".gamburger3").removeClass("gamR");
     }
     else {                                       
     $(".gamburger4").attr('style', 'visibility: hidden; margin-right: -1000px;');
     $(".gamburger3").attr('datas', 'off');
     $(".gamburger3").removeClass("fa-times");
     $(".gamburger3").addClass("fa-bars");
+
+    // $(".gamburger3").addClass("gamR");
+    // $(".gamburger3").removeClass("gamL");
     }
     });
 });
 
-// расположение крестика при открытом меню
-// if (matchMedia) {
-//     const mq2 = window.matchMedia("(max-width: 519px)");
-// 	mq2.addListener(WidthChange2);
-// 	WidthChange(mq2);
-// }
-	
-// 	// media query change
-// function WidthChange2(mq2) {
-// 	if (mq2.matches) {
-// 		// divF.classList.add("flex-row");
-//         // divF2.classList.add("flex-row");
-//         // left.classList.remove("left");
-//         // leftP.classList.remove("left");
-//         // insert.insertBefore(flex2, slider);
-
-// 	} else {
-// 		// divF.classList.remove("flex-row");
-//         // divF2.classList.remove("flex-row");
-//         // left.classList.add("left");
-//         // leftP.classList.add("left");
-//         // insert.insertBefore(slider, flex2);
-// 	}	
-// }
-  
 
 
 

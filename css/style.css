@@ -11,13 +11,12 @@ body {
 	background-image: url(../img/bg.png);
 	background-repeat: round;
 	background-attachment: fixed;
-	/* max-width: 1200px; */
 	margin: auto;
 
 }
 
 ul, li {
-	display: inline-block;
+	display: inline-flex;
 	padding: 0;
 	margin: 0;
 }
@@ -36,12 +35,6 @@ p {
 	text-align: left;
 }
 
-/* .flex-row {
-	display: flex;
-	/* align-items: center; */
-    /* align-content: space-around; 
-} */
-
 
 /* Шапка */
 
@@ -58,7 +51,6 @@ p {
 .gamburger1 {
 	display: none;
 }
-
 
 .nav {
 	margin: auto;
@@ -79,8 +71,6 @@ p {
 	display: flex;
 	width: 1200px;
 	justify-content: space-between;
-	align-items: center; 
-	align-content: space-around;
 }
 
 .logo {
@@ -89,16 +79,22 @@ p {
 	padding-left: 1em;
 }
 
-.hover-border:hover {
-	box-shadow: 0 0 0 2px white, 0 0 0 .2em rgb(150, 145, 141);
-	border-radius: 5px;
-	cursor: pointer;
-	transition: .2s linear;
+a {
+	color: #3D7985;
+	text-decoration: none;	
 }
 
-.nav-link, a {
-    color: #3D7985;
-    text-decoration: none;
+.nav-link {
+	transition:all .33s linear;
+	-webkit-transition:all .33s linear;
+	-moz-transition:all .33s linear;
+	-ms-transition:all .33s linear;
+	-o-transition:all .33s linear;
+}
+
+.hover-border:hover {
+	cursor: pointer;
+	border-bottom: 2px ridge #3D7985;
 }
 
 .active a {
@@ -263,11 +259,6 @@ li:hover > .submenu{
 	margin: 4% auto;
 	max-width: 1200px;
 	max-height: 60em; 
-	/* padding: auto;
-	margin: auto; */
-	
-	/* margin: 3.2em auto auto; */
-	display: block;
 }
 
 #flex{
@@ -309,10 +300,6 @@ li:hover > .submenu{
 	flex-grow: 1;
 }
 
-.container2 {
-	display: none;
-}
-
 .slider {
 	margin: 0;
 	padding: 0;
@@ -341,23 +328,22 @@ li:hover > .submenu{
 }
 
 .img-index  {
-	width: 400px;
+	width: 25em;
 	height: 25vh;
-	/* 10em */
 }
 
 .img-slider {
-	width: 800px;
+	width: 50em;
 }
 
 .img-index-big{
-	width: 1000px;
+	width: 62.5em;
 }
 
 .p-slider {
 	position: absolute;
-	top: 10px;
-	right: 20px;
+	top: .5em;
+	right: 1.5em;
 	color: white;
 }
 
@@ -373,7 +359,6 @@ li:hover > .submenu{
 .big-card{ 
 	width: 100%;
 	height: 80vh;
-    /* height: 33em; */
     border-radius: 5px;
     box-shadow: 0 0 5px 2px;
 }
@@ -657,32 +642,20 @@ li:hover > .submenu{
 		font-size: 34px;        
 		padding-top: 4px;
 
-		padding-left: 4px;    
+		padding-left: 1em;    
 		cursor: pointer;    
 	}
 	.gamburger1 i.gamburger3:hover {    
-		background: #fff;    
 		color: #3D7985;  
 	}
 	.gamburger2 {
 		overflow: hidden;
 		display: flex;
 		flex-direction: column;
-		width: 100vw;
-	}
-	.gamburger3 {
-		margin: 0 0 0 auto;
-	}
+	} 
 	.gamburger4 {
-		/* max-width: 519px; */
-
-
+		width: 91vw;
 		display: flex;
-		/* justify-content: center;
-		align-items: center; 
-		align-content: flex-end; */
-
-
 		margin-right: -1000px;    
 		visibility: hidden;    
 		transition: all 0.3s ease;    
@@ -692,14 +665,11 @@ li:hover > .submenu{
 		opacity: 90%;
 	}
 	.gamburger5 {
-		list-style-type: none;
-		display: block;    
-		margin: 0px;    
-		padding: 0px;
+		display: flex;    
+        flex-direction: column;
 	}
 	.gamburger5 li {
-		margin-bottom: 5px;
-		
+		padding-left: 1em;		
 	}
 	.gamburger5 li a {
 		font-size: 17px;      
@@ -714,9 +684,7 @@ li:hover > .submenu{
 		background: #999; 
 		opacity: 40%;
 		margin:0px;
-	}
-	
-	
+	}	
 }
 
 
