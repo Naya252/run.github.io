@@ -1,6 +1,12 @@
 
 
 body {
+	/* display: flex;
+	flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; */
 	font-family: 'Lobster', cursive;
 	background-image: url(../img/bg.png);
 	background-repeat: round;
@@ -250,16 +256,18 @@ li:hover > .submenu{
 
 .container{
 	height: 80vh;
-	margin: 4% auto;
+	/* margin: 4% auto; */
+	margin: auto;
 	max-width: 1200px;
 	max-height: 60em; 
 }
 
 #flex{
-	margin-top: 4em;
+	margin: 4em 1em;
+	/* margin-top: 4em;
 	margin-left: 1em;
-	margin-right: 1em;
-	padding: 5% auto;
+	margin-right: 1em; */
+	/* padding: 5% auto; */
 }
 
 .flex-row {
@@ -343,7 +351,8 @@ li:hover > .submenu{
 
 
 .card {
-    width: 100%;
+	width: 100%;
+	/* max-height: 33em; */
     height: 25vh;
     background: #1e6688;
     border-radius: 5px;
@@ -601,6 +610,9 @@ li:hover > .submenu{
 
 	.flex-grow-1, #slider {
 		margin-bottom: 1em;	
+	}
+	.card, .big-card {
+		max-height: 33em;
 	}
 }
 
