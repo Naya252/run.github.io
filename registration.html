@@ -102,36 +102,75 @@
 	<div class="container">
 		<div class="content">
 			<h1 id="h1" >Регистрация</h1>
-			<form action="#" method="post" enctype="multipart/rorm-data" autocomplete="on" class="form">
-				<p>
+			<form name="reg" action="#" method="post" enctype="multipart/rorm-data" autocomplete="on" class="form">
+				<div>
+					<label for="login">Логин: </label>
+					<input name="login" id="login" type="text" value="" placeholder="введите логин">
+					<span class="info-block">
+					  Логин должен содержать минимум 3 символа
+					</span>
+				  </div>
+				<!-- <p>
 					<label>Логин:
 						<input required type="text" placeholder="введите логин" minlength="3" maxlength="12"></label>
-				</p>
-				<p>
-					<label>Почта:
-						<input required type="email" placeholder="name@mail.com"></label>
-				</p>
-				<p>
+				</p> -->
+				<div>
+					<label for="pwd">Пароль: </label>
+					<input name="pwd" id="pwd" type="password" placeholder="введите пароль">
+					<span class="info-block">
+					  Пароль должен содержать минимум 6 символов
+					</span>
+				</div>				
+				<!-- <p>
 					<label>Пароль:
 						<input required type="password" placeholder="введите пароль" minlength="6" maxlength="12"></label>
-				</p>
-				<p>
+				</p> -->
+				<div>
+					<label for="pwd2">Подтверждение пароля: </label>
+					<input name="pwd2" id="pwd2" type="password" placeholder="подтвердите пароль">
+					<!-- <span class="info-block">
+					  Пароль должен содержать минимум 6 символов
+					</span> -->
+				</div>
+				<!-- <p>
 					<label>Подтверждение пароля:
 						<input required type="password" placeholder="введите пароль" minlength="6" maxlength="12"></label>
-				</p>
-				<p>
+				</p> -->
+				<div>
+					<label for="mail">Почта: </label>
+					<input name="mail" id="mail" type="email" placeholder="name@mail.com">
+					<!-- <span class="info-block">
+					  
+					</span> -->
+				</div>
+				<!-- <p>
+					<label>Почта:
+						<input required type="email" placeholder="name@mail.com"></label>
+				</p> -->
+				<div>
+					<label for="ava">Загрузка изображения: </label>
+					<input name="ava" id="ava" accept="image/*" type="file">
+					<!-- <span class="info-block">
+					  
+					</span> -->
+				</div>
+				<!-- <p>
 					<label>Загрузка изображения:
-						<input accept="image/*" type="file"></label>
-				</p>
-				<p class="button">
+						<input id="input" accept="image/*" type="file"></label>
+				</p> -->
+				<!-- <p class="button">
 					<input type="submit" value="Регистрация" class="btn">
 				</p>
 				<p class="button">
 					<input type="reset" value="Сброс" class="btn">
-				</p>
+				</p> -->
+
+				<input type="submit" value="Отправить" class="btn">
+				<input type="reset" value="Очистить" class="btn">
 			</form>
 		</div>
 	</div>
+
 	<footer class="footer">
 		<div class="footer-body">
 			<div class="flex-footer ">
@@ -151,6 +190,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/form.js"></script>
 	<script src="js/registration.js"></script>	
 	<script src="js/script.js"></script>		
 </body>
