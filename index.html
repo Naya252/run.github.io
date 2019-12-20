@@ -10,6 +10,10 @@
 	<link rel="stylesheet" media="all" href="css/style.css">
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/styleReg.css" type="text/css">
 	
 	<title>Главная</title>
 </head>
@@ -34,26 +38,62 @@
 				</li> -->
 				<li class="nav-item">
 					<a id="btn" class="hover-border nav-link">Войти</a>
-					<div id="form-nav" class="form-nav">
-						<div class="modal">
-							<form action="">
-								<div class="item-modal">
-									<i class="fas fa-door-closed icon"></i>
-									<a class="link-modal" href="registration.html">Регистрация</a>
-								</div>
-								<div class="item-modal">
-									<i class="fas fa-door-open icon"></i>
-									<a class="link-modal" href="authorization.html">Авторизация</a>
-								</div>
-								<div class="item-modal">
-									<i class="fas fa-door-open icon"></i>
-									<a class="link-modal" href="data.html">Кабинет</a>
-								</div>
-								<div class="item-modal">
-									<i class="far fa-times-circle icon"></i>
-									<a id="close" class="link-modal" href="#">Закрыть</a>
-								</div>
-							</form>
+					<div id="form-nav" class="form-nav">	
+						<div class="dws-wrapper">
+							<div class="dws-form">
+								<!-- <input type="radio" id="tab-1" name="tabs" checked>
+								<label class="tab" for="tab-1" title="Вкладка 1">Авторизация</label>
+
+								<input type="radio" name="tabs" id="tab-2">
+								<label class="tab" for="tab-2" title="Вкладка 2">Регистрация</label>
+
+								<input type="radio" name="tabs" id="tab-3">
+								<label title="Вкладка 3">
+									<a id="close" class="far fa-times-circle" for="tab-3" href="#"></a>
+								</label> -->
+
+								<!-- Вкладки на JS -->
+								<label class="tab active" title="Вкладка 1">Авторизация</label>
+								<label class="tab " title="Вкладка 2">Регистрация</label>
+								<label title="Вкладка 3">
+									<a id="close" class="far fa-times-circle" for="tab-3" href="#"></a>
+								</label>
+						
+								<form id="form-1" class="tab-form active">
+									<div class="box-input">
+										<input class="input" type="text" required>
+										<label>Введите E-mail</label>
+									</div>
+						
+									<div class="box-input">
+										<input class="input" type="password" required>
+										<label>Введите пароль</label>
+									</div>
+						
+									<a href="#" class="button">Войти</a>
+									<ul class="social">
+										<li><a href="#"><div><i class="fa fa-facebook"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-twitter"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-instagram"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-vk"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-youtube"></i></div></a></li>
+									</ul>
+									<a href="#">Я забыл свой E-mail или пароль</a>
+								</form>
+						
+								<form id="form-2" class="tab-form">
+									<input class="input" type="email" placeholder="Введите E-mail адрес">
+									<input class="input" type="text" placeholder="Введите свое имя">
+									<input class="input" type="password" placeholder="Введите пароль">
+									<a href="#" class="button">Регистрация</a>
+						
+									<div class="recover">
+										<input type="checkbox" id="ckbox">
+										<label for="ckbox">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+									</div>
+								</form>
+						
+							</div>
 						</div>
 					</div>
 				</li>
@@ -73,90 +113,67 @@
 					<li>
 						<a id="btn2"><i class="fa fa-angle-right"></i>Войти</a>
 						<div id="form-nav2" class="form-nav">
-							<div class="modal">
-								<form action="">
-									<div class="item-modal">
-										<i class="fas fa-door-closed icon"></i>
-										<a class="link-modal" href="registration.html">Регистрация</a>
-									</div>
-									<div class="item-modal">
-										<i class="fas fa-door-open icon"></i>
-										<a class="link-modal" href="authorization.html">Авторизация</a>
-									</div>
-									<div class="item-modal">
-										<i class="fas fa-door-open icon"></i>
-										<a class="link-modal" href="data.html">Кабинет</a>
-									</div>
-									<div class="item-modal">
-										<i class="far fa-times-circle icon"></i>
-										<a id="close2" class="link-modal" href="#">Закрыть</a>
-									</div>
-								</form>
+							<div class="dws-wrapper">
+								<div class="dws-form2">
+									<!-- <input type="radio" id="tab-12" name="tabs" checked>
+									<label class="tab" for="tab-12" title="Вкладка 1">Авторизация</label>
+							
+									<input type="radio" name="tabs" id="tab-22">
+									<label class="tab" for="tab-22" title="Вкладка 2">Регистрация</label>
+	
+									<input type="radio" name="tabs" id="tab-32">
+									<label title="Вкладка 3">
+										<a id="close2" class="far fa-times-circle" for="tab-3" href="#"></a>
+									</label> -->
+
+									<label class="tab2 active" title="Вкладка 1">Авторизация</label>
+									<label class="tab2 " title="Вкладка 2">Регистрация</label>
+									<label title="Вкладка 3">
+										<a id="close2" class="far fa-times-circle" for="tab-3" href="#"></a>
+									</label>
+
+									<form id="form-12" class="tab-form2 active">
+										<div class="box-input">
+											<input class="input" type="text" required>
+											<label>Введите E-mail</label>
+										</div>
+							
+										<div class="box-input">
+											<input class="input" type="password" required>
+											<label>Введите пароль</label>
+										</div>
+							
+										<a href="#" class="button">Войти</a>
+										<ul class="social">
+											<li><a href="#"><div><i class="fa fa-facebook"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-twitter"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-instagram"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-vk"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-youtube"></i></div></a></li>
+										</ul>
+										<a href="#">Я забыл свой E-mail или пароль</a>
+									</form>
+							
+									<form id="form-22" class="tab-form2">
+										<input class="input" type="email" placeholder="Введите E-mail адрес">
+										<input class="input" type="text" placeholder="Введите свое имя">
+										<input class="input" type="password" placeholder="Введите пароль">
+										<a href="#" class="button">Регистрация</a>
+							
+										<div class="recover">
+											<input type="checkbox" id="ckbox2">
+											<label for="ckbox">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+										</div>
+									</form>
+							
+								</div>
 							</div>
-						</div>
 					</li><br>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-
-
-
-
-
-	<!-- <header class="header">
-		<div class="flex-row">
-			<div class="nav">
-				<div class="nav-item">
-					<img src="img/logo.png" alt="logo" class="logo">
-				</div>
-				<ul class="container-ul">
-					<li class="nav-item active">
-						<a class="hover-border nav-link" href="index.html">Главная</a>
-					</li>
-					<li class="nav-item">
-						<a class="hover-border nav-link" href="#futark">Футарк</a>
-							<ul class="submenu">
-							<li>
-								<a class="futark" href="link.html">Старший Футарк</a>
-							</li>
-							<li>
-								<a class="futark" href="link.html">Младший Футарк</a>
-							</li>
-						</ul>	
-					</li>
-					<li class="nav-item">
-						<a class="hover-border nav-link" href="description.html">Статьи</a>
-					</li>
-					<li class="nav-item">
-						<a class="hover-border nav-link" href="data.html">Кабинет</a>
-					</li>
-					<li class="nav-item">
-						<a class="hover-border nav-link" href="#form-nav">Войти</a>
-						<div id="form-nav" class="form-nav">
-							<div class="modal">
-								<form action="">
-									<div class="item-modal">
-										<i class="fas fa-door-closed icon"></i>
-										<a class="link-modal" href="registration.html">Регистрация</a>
-									</div>
-									<div class="item-modal">
-										<i class="fas fa-door-open icon"></i>
-										<a class="link-modal" href="authorization.html">Авторизация</a>
-									</div>
-									<div class="item-modal">
-										<i class="far fa-times-circle icon"></i>
-										<a class="link-modal" href="#">Закрыть</a>
-									</div>
-								</form>
-							</div>
-						</div>
-					</li>
-				</ul>	
-			</div>	
-		</div>	
-	</header> -->
 
 	<div class="container">
 		<div id="flex" class="flex">
@@ -228,7 +245,7 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="js/reg.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/main.js"></script>		
 	<script src="js/script.js"></script>
