@@ -90,7 +90,7 @@ p {
 
 a {
 	/* color: #3D7985; */
-	color: rgb(126, 91, 77);
+	color: rgb(119, 56, 31);
 	text-decoration: none;	
 }
 
@@ -108,7 +108,6 @@ a {
 }
 
 .active a {
-	/* color: #5C468F; */
 	color: rgb(177, 145, 5);
 }
 

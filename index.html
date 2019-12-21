@@ -96,6 +96,7 @@
 										<label for="password_reg">Подтвердите пароль</label>
 									</div>
 									<input id="btn" type="submit" value="Регистрация" class="button">
+									<!-- <a href="#" id="btn" type="submit" class="button">Регистрация</a> -->
 
 						
 									<div class="recover">
@@ -157,23 +158,39 @@
 										</ul>
 										<a href="#">Я забыл свой E-mail или пароль</a>
 									</form>
-							
+
 									<form id="form-22" class="tab-form2" name="reg2">
-										<input class="input" type="email" placeholder="Введите E-mail адрес" required>
-										<input class="input" type="text" placeholder="Введите свое имя" required>
-										<input class="input" type="password" placeholder="Введите пароль" required>
-										<span class="info-block">
-											Пароль должен содержать хотя бы один спецсимвол, минимум одно число и хотя бы одну латинскую букву в нижнем и верхнем регистре. Длина пароля должна быть не менее 6 символов.
-										</span>
-										<!-- <a href="#" class="button" type="submit">Регистрация</a> -->
-										<input type="submit" value="Регистрация" class="button">
-							
-										<div class="recover">
-											<input type="checkbox" id="ckbox2" required>
-											<label for="ckbox">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+										<div class="box-input">
+											<input class="input" type="email" id="email2" name="email2" placeholder=" " required>
+											<label for="email2">Введите E-mail адрес</label>
 										</div>
-									</form>
-							
+										<div class="box-input">
+											<input class="input" type="text" id="name2" name="name2" placeholder=" " required>
+											<label for="name2">Введите свое имя</label>
+										</div>
+										<div class="box-input">
+											<input class="input" type="password" id="password2" name="password2"  placeholder=" " required 
+											pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+											<label for="password2">Введите пароль</label>
+											<div id="message2" class="info-block">
+												<p>Пароль должен содержать:</p>
+												<p id="letter2" class="invalid"><b>строчную</b> букву</p>
+												<p id="capital2" class="invalid"><b>заглавную</b> букву</p>
+												<p id="number2" class="invalid"><b>число</b></p>
+												<p id="length2" class="invalid">минимум <b>8 символов</b></p>
+											</div>
+										</div>
+										<div class="box-input">
+											<input type="password" class="input" id="password_reg2" name="password_reg2"  placeholder=" " required>
+											<label for="password_reg2">Подтвердите пароль</label>
+										</div>
+										<input id="btn2" type="submit" value="Регистрация" class="button">
+								
+										<div class="recover">
+											<input type="checkbox" id="ckbox2" name="ckbox2"  required>
+											<label for="ckbox2">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+										</div>										
+									</form>						
 								</div>
 							</div>
 					</li><br>
@@ -253,7 +270,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/form.js"></script>
+
 	<script src="js/slider.js"></script>
 	<script src="js/main.js"></script>		
 	<script src="js/script.js"></script>
