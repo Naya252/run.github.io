@@ -51,13 +51,7 @@
     padding: 30px 20px 20px;
 }
 
-.tab-form.active, .tab-form2.active
-/* , */
-/* #tab-1:checked~#form-1,
-#tab-2:checked~#form-2, */
-/* #tab-12:checked~#form-12,
-#tab-22:checked~#form-22  */
-{
+.tab-form.active, .tab-form2.active{
     display: block;
 }
 
@@ -71,10 +65,7 @@ label.tab, label.tab2 {
     cursor: pointer;
 }
 
-label.tab.active, label.tab2.active
-/* ,
-input[name="tabs"]:checked+label  */
-{
+label.tab.active, label.tab2.active{
     background-color: #fff;
     color: #1d5f75;
 }
@@ -213,6 +204,22 @@ input[name="tabs"] {
     text-align: center;
 }
 
+.info-block {
+    font-size: .5em;
+    margin-bottom: 1em;
+    display: none;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
 
 /* Плавающий текст */
 .box-input {
@@ -243,7 +250,7 @@ input[name="tabs"] {
 }
 
 /* Эффект кнопки */
-a.button {
+a.button, input.button {
     background: #298cad;
     color: #ffffff;
     font-size: 18px;
@@ -259,7 +266,7 @@ a.button {
     border-bottom: 4px solid #36d2ff;
 }
 
-a.button:hover {
+a.button:hover, input.button:hover {
     color: #ffffff;
 }
 

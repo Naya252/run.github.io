@@ -1,51 +1,72 @@
-let form = document.forms.reg;
-console.log(form);
+var myInput = document.getElementById("password");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
 
-let login = form.elements.login;
-console.log(login.value);
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+};
 
-login.value = "asghmnk";
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+};
 
-let pwd = form.elements.pwd;
-let long = false;
-    up = false,
-    down = false,
-    num = false,
-    sym = false;
-
-if (/.{9,}/.test(pwd))
-    long = true;
-if (/(\d\D*){3,}/.test(pwd))
-    num = true;
-if (/[A-Z]/.test(pwd))
-    up = true;
-if (/[a-z]/.test(pwd))
-    down = true;
-if (/\W/.test(pwd))
-    sym = true;
-
-let res = `Длина > 9 символов: ${long}\nЕсть 3 цифры: ${num}\nЕсть заглавные буквы лат. алфавита: ${up}\nЕсть строчные буквы лат. алфавита: ${down}\nЕсть спецсимволы: ${sym}`;
-alert(res);
-
-form.addEventListener('submit', myFunc);
-
-function myFunc(e) {
-  e.preventDefault();
-  console.log(this);
-  let formData = new FormData(this);
-  console.log(formData);
-  console.log(formData.get("login"));
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
 }
 
-form.addEventListener('submit', myFunction);
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
 
-function funcFocus() {
-    console.log("Фокус получил");
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+};
+
+
+window.onload = function () {
+    document.getElementById("password").onchange = validatePassword;
+    document.getElementById("password_reg").onchange = validatePassword;
+};
+function validatePassword(){
+var pass2=document.getElementById("password_reg").value;
+var pass1=document.getElementById("password").value;
+if(pass1!=pass2)
+    document.getElementById("password_reg").setCustomValidity("Пароли не совпадают");
+else
+    document.getElementById("password_reg").setCustomValidity('');
+//empty string means no validation error
 }
-
-function funcBlur() {
-    console.log("Фокус потерял");
-}
-
-login.addEventListener('blur', funcBlur);
-login.addEventListener('focus', funcFocus);
