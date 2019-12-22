@@ -9,7 +9,7 @@ let arr = [{
     img_container: ``,
     photo: `img/tiwaz2.jpg`,
     desc: ``,
-    description: `<strong>Руна Тейваз</strong><em>(Tiwaz)</em> — первая, открывающая руна третьего атта. Традиционно она связана с асом Тюром (другие имена — Тир, Тиу и Тиваз). Это бог войны в Скандинавской мифологии, известный тем, что у него была всего одна рука. <br><br> <q>Тюр — бог однорукий, Горесть Фенрира, И храмов владыка</q> <br><br> Так говорится в рунической поэме.`,
+    description: `Руна Тейваз (Tiwaz) — первая, открывающая руна третьего атта. Традиционно она связана с асом Тюром (другие имена — Тир, Тиу и Тиваз). Это бог войны в Скандинавской мифологии, известный тем, что у него была всего одна рука. "Тюр — бог однорукий, Горесть Фенрира, И храмов владыка" Так говорится в рунической поэме.`,
     read: ``,
     read_text: `Читать далее`,
     read_href: `article_tei.html`,
@@ -24,15 +24,15 @@ let arr = [{
     min_content: ``,
     photo: `img/uruz2.jpg`,
     desc: ``,
-    description: `<strong>Руна Уруз</strong> <em>(Ур, Uruz)</em> — вторая руна футарка, ее значение — «зубр», или
+    description: `Руна Уруз (Ур, Uruz) — вторая руна футарка, ее значение — «зубр», или
     «бык», перекликается со значением первой руны — Феху, домашний скот. Сам вид руны Уруз напоминает
     большого быка или тура, стоящего боком, с поднятой вверх головой и грудью. Однако отличие от первой
     руны футарка принципиальное: это не домашний бык, а могучее и грозное дикое животное, полное
     жизненной силы, мощи и ярости. Таково и значение этой руны — сила, мощь, физическая
-    выносливость.<br><br>`,
+    выносливость.`,
     read: ``,
     read_text: `Читать далее`,
-    read_href: `article_tei.html`,
+    read_href: `article_uruz.html`,
 },
 {
     name: `Руна Турисаз`,
@@ -44,15 +44,15 @@ let arr = [{
     min_content: ``,
     photo: `img/thurisaz3.jpg`,
     desc: ``,
-    description: `Название <strong>руны Турисаз</strong> <em>(Thurisaz)</em> — переводится как «врата», и считается,
+    description: `Название руны Турисаз (Thurisaz) — переводится как «врата», и считается,
     что это проход между земным и небесным миром, портал к сакральным знаниям. Чем-то внутренний смысл
     руны Турисаз похож на затяжной прыжок через пропасть – у прыгающего нет права на ошибку и сомнения.
     Маг подготавливает себя к этому в течение долгих лет, и далеко не каждый решается все-таки
     совершить его, ведь перемена реальности необратима, отступить будет нельзя, так же как жить в новом
-    измерении с оглядкой на прошлое.<br><br>`,
+    измерении с оглядкой на прошлое.`,
     read: ``,
     read_text: `Читать далее`,
-    read_href: `article_tei.html`,
+    read_href: `article_thur.html`,
 }
 ];
 
@@ -60,13 +60,12 @@ function addCards(arr) {
 const cards = document.createElement('div');
 cards.classList.add(`cards`);
 cards.style =
-    `
-display: flex;
-flex-wrap: wrap;
-max-width: 1200px;
-margin: auto auto 3em auto;
-justify-content: center;
-padding: 1em;`
+        `display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto auto 3em auto;
+        justify-content: center;
+        padding: 1em;`
 document.body.append(cards);
 
 for (let i = 0; i < arr.length; i++) {
@@ -144,8 +143,8 @@ for (let i = 0; i < arr.length; i++) {
     const description = document.createElement('p');
     description.style =
         `
-    color: rgb(70, 61, 78);
-    text-align: justify;`;
+        color: rgb(70, 61, 78);
+        text-align: justify;`;
     description.append(arr[i].description);
 
     const read = document.createElement('div');
