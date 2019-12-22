@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Описание рун старшего футарка">
+	<meta name="keywords" content="описание, руны">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Damion|Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+	<link rel="stylesheet" media="all" href="css/style.css">
+	<link rel="stylesheet" href="css/desc.css">
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/styleReg.css" type="text/css">
+	<title>Турисаз</title>
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<div class="logo2">
+				<img src="img/logo.png" alt="logo" class="logo">
+			</div>
+			<ul class="container-ul">
+				<li class="nav-item">
+					<a class="hover-border nav-link" href="index.html">Главная</a>
+				</li>
+				<li class="nav-item">
+					<a class="hover-border nav-link" href="#futark">Футарк</a>
+				</li>
+				<li class="nav-item active">
+					<a class="hover-border nav-link" href="description.html">Статьи</a>
+				</li>
+				<!-- <li class="nav-item">
+					<a class="hover-border nav-link" href="data.html">Кабинет</a>
+				</li> -->
+				<li class="nav-item">
+					<a id="btn" class="hover-border nav-link">Войти</a>
+					<div id="form-nav" class="form-nav">	
+						<div class="dws-wrapper">
+							<div class="dws-form">
+
+								<label class="tab active" title="Вкладка 1" for="1">Авторизация</label>
+								<label class="tab " title="Вкладка 2" for="2">Регистрация</label>
+								<label title="Вкладка 3">
+									<a id="close" class="far fa-times-circle" for="3" href="#"></a>
+								</label>
+						
+								<form id="form-1" class="tab-form active" name="aut">
+									<div class="box-input">
+										<input class="input" type="email" required>
+										<label for="email">Введите E-mail</label>
+									</div>
+						
+									<div class="box-input">
+										<input class="input" name="pwd" id="pwd" type="password" required>
+										<label for="pwd">Введите пароль</label>
+									</div>
+						
+									<input type="submit" value="Войти" class="button">
+									<ul class="social">
+										<li><a href="#"><div><i class="fa fa-facebook"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-twitter"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-instagram"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-vk"></i></div></a></li>
+										<li><a href="#"><div><i class="fa fa-youtube"></i></div></a></li>
+									</ul>
+									<a href="#">Я забыл свой E-mail или пароль</a>
+								</form>
+						
+								<form id="form-2" class="tab-form" name="reg">
+									<div class="box-input">
+										<input class="input" type="email" id="email" name="email" placeholder=" " required>
+										<label for="email">Введите E-mail адрес</label>
+									</div>
+									<div class="box-input">
+										<input class="input" type="text" id="name" name="name" placeholder=" " required>
+										<label for="name">Введите свое имя</label>
+									</div>
+									<div class="box-input">
+										<input class="input" type="password" id="password" name="password"  placeholder=" " required 
+										pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+										<label for="password">Введите пароль</label>
+										<div id="message" class="info-block">
+											<p>Пароль должен содержать:</p>
+											<p id="letter" class="invalid"><b>строчную</b> букву</p>
+											<p id="capital" class="invalid"><b>заглавную</b> букву</p>
+											<p id="number" class="invalid"><b>число</b></p>
+											<p id="length" class="invalid">минимум <b>8 символов</b></p>
+										</div>
+									</div>
+									<div class="box-input">
+										<input type="password" class="input" id="password_reg" name="password_reg"  placeholder=" " required>
+										<label for="password_reg">Подтвердите пароль</label>
+									</div>
+									<input id="btn" type="submit" value="Регистрация" class="button">
+									<!-- <a href="#" id="btn" type="submit" class="button">Регистрация</a> -->
+
+						
+									<div class="recover">
+										<input type="checkbox" id="ckbox" name="ckbox"  required>
+										<label for="ckbox">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+									</div>
+
+									
+								</form>
+						
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="gamburger1">
+		<div class="gamburger2">
+			<i class="fa fa-bars gamburger3 gamR" datas="off"></i>
+			<div class="gamburger4">
+				<ul class="gamburger5">
+					<li><a href="index.html"><i class="fa fa-angle-right"></i>Главная</a></li><br>
+					<li><a href="#futark"><i class="fa fa-angle-right"></i>Футарк</a></li><br>
+					<li><a href="description.html"><i class="fa fa-angle-right"></i>Статьи</a></li><br>
+					<!-- <li><a href="data.html"><i class="fa fa-angle-right"></i>Кабинет</a></li><br> -->
+					<li>
+						<a id="btn2"><i class="fa fa-angle-right"></i>Войти</a>
+						<div id="form-nav2" class="form-nav">
+							<div class="dws-wrapper">
+								<div class="dws-form2">
+
+									<label class="tab2 active" title="Вкладка 1" for="1">Авторизация</label>
+									<label class="tab2 " title="Вкладка 2" for="2">Регистрация</label>
+									<label title="Вкладка 3">
+										<a id="close2" class="far fa-times-circle" for="3" href="#"></a>
+									</label>
+
+									<form id="form-12" class="tab-form2 active" name="aut2">
+										<div class="box-input">
+											<input class="input" type="email" required>
+											<label for="email">Введите E-mail</label>
+										</div>
+							
+										<div class="box-input">
+											<input class="input" type="password" required>
+											<label for="pwd">Введите пароль</label>
+										</div>
+							
+										<!-- <a href="#" class="button" type="submit">Войти</a> -->
+										<input type="submit" value="Войти" class="button">
+										<ul class="social">
+											<li><a href="#"><div><i class="fa fa-facebook"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-twitter"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-instagram"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-vk"></i></div></a></li>
+											<li><a href="#"><div><i class="fa fa-youtube"></i></div></a></li>
+										</ul>
+										<a href="#">Я забыл свой E-mail или пароль</a>
+									</form>
+
+									<form id="form-22" class="tab-form2" name="reg2">
+										<div class="box-input">
+											<input class="input" type="email" id="email2" name="email2" placeholder=" " required>
+											<label for="email2">Введите E-mail адрес</label>
+										</div>
+										<div class="box-input">
+											<input class="input" type="text" id="name2" name="name2" placeholder=" " required>
+											<label for="name2">Введите свое имя</label>
+										</div>
+										<div class="box-input">
+											<input class="input" type="password" id="password2" name="password2"  placeholder=" " required 
+											pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+											<label for="password2">Введите пароль</label>
+											<div id="message2" class="info-block">
+												<p>Пароль должен содержать:</p>
+												<p id="letter2" class="invalid"><b>строчную</b> букву</p>
+												<p id="capital2" class="invalid"><b>заглавную</b> букву</p>
+												<p id="number2" class="invalid"><b>число</b></p>
+												<p id="length2" class="invalid">минимум <b>8 символов</b></p>
+											</div>
+										</div>
+										<div class="box-input">
+											<input type="password" class="input" id="password_reg2" name="password_reg2"  placeholder=" " required>
+											<label for="password_reg2">Подтвердите пароль</label>
+										</div>
+										<input id="btn2" type="submit" value="Регистрация" class="button">
+								
+										<div class="recover">
+											<input type="checkbox" id="ckbox2" name="ckbox2"  required>
+											<label for="ckbox2">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+										</div>										
+									</form>						
+								</div>
+							</div>
+					</li><br>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="desc">
+				<h1>Руна Турисаз</h1>
+				<div class="author-data">
+					<p class="name-author"><a href="https://lasrunas.ru/scandinavian-runes/runa-thurisaz">Name author</a>
+					</p>
+					<p class="data-text">30/10/2019</p>
+				</div>
+				<div>
+					<img src="img/thurisaz3.jpg" alt="thurisaz" height="250" width="380" class="img-runa">
+				</div>
+				<div>
+					<p>
+						Название <strong>руны Турисаз</strong> <em>(Thurisaz)</em> — переводится как «врата», и считается,
+						что это проход между земным и небесным миром, портал к сакральным знаниям. Чем-то внутренний смысл
+						руны Турисаз похож на затяжной прыжок через пропасть – у прыгающего нет права на ошибку и сомнения.
+						Маг подготавливает себя к этому в течение долгих лет, и далеко не каждый решается все-таки
+						совершить его, ведь перемена реальности необратима, отступить будет нельзя, так же как жить в новом
+						измерении с оглядкой на прошлое.<br><br>
+						По своему начертанию руна Турисаз схожа с английской буквой D и руническим символом Вуньо, в
+						некоторых наборах из-за невнятной гравировки их сложно отличить друг от друга. Скандинавы называют
+						ее «руна Турс», божеством-покровителем считается Тор, который был представителем
+						правеликанов-турсов. Согласно мифологии, только он оберегал Асгард от их набегов. Великаны
+						символизируют хаос, Тор наводит свой порядок. Все трактовки этой руны тесно связано с этой
+						метафорой – включая ту часть, в которой молот Тора раз за разом возвращается к своему хозяину после
+						метания. За каждым действием следует ответ, и руна Тур напоминает, что нужно учитывать последствия.
+						<br><br>
+						Основная функция символа – защитная, однако, при неправильном применении энергетическая сущность
+						знака пойдет против того, кто ее направил. Поэтому к использованию Турисаз следует подходить
+						максимально осознанно и осторожно.
+					</p>
+				</div>
+				<div>
+					<h2>Значение прямой руны</h2>
+					<p>
+						В прямом положении значение руны Турисаз символизирует кардинальные перемены в жизни человека –
+						внешние и внутренние. При появлении этого знака нужно без спешки взвесить все «за» и «против»,
+						осознать собственную готовность к смене курса. Турисаз заставляет делать выбор: остаться в
+						привычной реальности или подготовиться к новой жизни. Даже если человек не решится на перемены,
+						сложившаяся вокруг него негативная ситуация никуда не денется, рано или поздно он будет вынужден
+						как-то ее разрешить. В определенном смысле дух Турисаз напоминает действие кармы у индуистов –
+						столкновение с ней неизбежно, а любые промедления сделают процесс сложнее и болезненнее.<br><br>
+						Рядом с положительными рунами Турисаз означает поддержку высших сил, когда все идет как по маслу и
+						все события оказываются связанными между собой. В окружении негативных знаков руна означает
+						проверку на прочность, выход из зоны комфорта, которая доставит много неприятных минут, но сделать
+						это необходимо, чтобы избежать повторения в будущем.
+					</p>
+				</div>
+				<div>
+					<img src="img/thurisaz2.jpg" alt="thurisaz" height="500" width="800" class="img-runa">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="footer-body">
+			<div class="flex-footer ">
+				<div class="footer__item">
+					<p>
+						2019 / Все права защищены
+					</p>
+				</div>
+				<div class="footer__item">
+					<p>
+						N_&_N
+					</p>
+				</div>
+				<div class="footer__item">
+					<a href="#">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js"></script>		
+</body>
+</html>
