@@ -3,18 +3,75 @@ h1 {
 	margin-top: 2em;
 }
 
+.pic {
+	height: 188px;
+	min-width: 188px;
+	overflow: hidden; 
+	margin: 9px;
+	border: 5px solid #fff; /*Для всех браузеров*/
+	-webkit-box-shadow: 2px 3px 10px #6E6E6E;
+	box-shadow: 2px 3px 10px #6E6E6E;
+}
+
+.pic:hover { cursor: pointer;}
+
+	/*размеры всех картинок по умолчанию*/
+.min_img {
+	width: 220px;
+	height: 188px;
+}
+	
+	/*Увеличение*/
+.grow img {
+	height: 188px;
+	width: 188px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.grow img:hover, .grow img:active {
+	width: 300px;
+	height: 300px;
+	margin-left: -50px;
+	margin-top: -50px;
+}
+
 @media screen and (max-width: 768px) {
 	.min_content {
 		flex-direction: column;
 	}
 
-	.min_img {
-		width: 80% !important;
-		margin: auto;
+	.pic {
+		min-width: 80%;
+		margin: auto 3em;
 	}
 
+	.grow img {
+		height: 100%;
+		width: 100%;
+		
+	}
+
+	.grow img:hover {
+		width: 120%;
+	}
 	.container {
 		margin-top: 2em;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.pic {
+		margin: auto 1.5em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.pic {
+		margin: auto;
 	}
 }
 
