@@ -3,7 +3,7 @@ let h1 = document.getElementById("h1");
 
 // media query event handler
 if (matchMedia) {
-    const mqR = window.matchMedia("(max-width: 400px)");
+    const mqR = window.matchMedia("(max-width: 415px)");
     mqR.addListener(WidthChange);
     WidthChange(mqR);
 }

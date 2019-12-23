@@ -112,34 +112,6 @@ a {
 }
 
 
-/* выпадающее меню */
-/* .submenu{
-    display: none;
-    position: absolute;
-    background: #fff;
-}
-
-li:hover > .submenu{
-    display: block;
-}
-
-.submenu > li {
-	position: relative;
-	border-radius: 5px;
-	width: 10em;
-	text-align: center;
-	font-size: 16px;
-	margin: 0;
-	padding: 0;
-    box-shadow: 0 0 5px #000;
-    color: grey;
-}
-
-.submenu > li:hover {
-	box-shadow: 0 0 20px #000;
-	border-radius: 5px;
-} */
-
 /* свойства модального окна по умолчанию */
 .form-nav {
 	display: flex;
